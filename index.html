@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Nona Raa Hauu ❤️</title>
+
+https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Poppins:wght@300;400;500&display=swap
+
+<style>
+
+:root{
+--khaki:#c4b08a;
+--cream:#f9f4ec;
+--pink:#d8a7b1;
+--rose:#b76e79;
+--dark:#4b3e3e;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#f9f4ec,#fff8f2);
+overflow-x:hidden;
+color:var(--dark);
+}
+
+.section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:40px;
+text-align:center;
+}
+
+.hero{
+background:
+linear-gradient(
+rgba(255,255,255,.3),
+rgba(255,255,255,.3)),
+url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero-card{
+backdrop-filter:blur(12px);
+background:rgba(255,255,255,.65);
+padding:40px;
+border-radius:25px;
+max-width:700px;
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:5rem;
+font-weight:700;
+}
+
+h2{
+font-family:'Cormorant Garamond',serif;
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:1.2rem;
+line-height:1.8;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+background:#b76e79;
+border:none;
+color:white;
+border-radius:50px;
+cursor:pointer;
+font-size:16px;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.envelope{
+width:340px;
+height:220px;
+background:var(--khaki);
+position:relative;
+border-radius:10px;
+cursor:pointer;
+transition:.8s;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.envelope::before{
+content:"💌";
+font-size:70px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.typing{
+max-width:800px;
+font-size:1.3rem;
+line-height:2;
+min-height:180px;
+}
+
+.gallery{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:300px;
+height:420px;
+object-fit:cover;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.04);
+}
+
+.letter{
+max-width:900px;
+background:white;
+padding:50px;
+border-radius:25px;
+box-shadow:0 15px 50px rgba(0,0,0,.08);
+line-height:2;
+font-size:1.1rem;
+text-align:left;
+}
+
+.final{
+background:
+linear-gradient(
+135deg,
+#f9f4ec,
+#d8a7b1);
+}
+
+.count{
+font-size:120px;
+font-family:'Cormorant Garamond',serif;
+font-weight:700;
+color:#b76e79;
+}
+
+.secret{
+padding:20px 40px;
+margin-top:30px;
+border:none;
+background:#b76e79;
+color:white;
+border-radius:40px;
+cursor:pointer;
+}
+
+.hidden{
+display:none;
+}
+
+#secretMessage{
+margin-top:30px;
+max-width:700px;
+font-size:1.2rem;
+line-height:1.8;
+}
+
+.sakura{
+position:fixed;
+top:-20px;
+color:#f3b7c2;
+font-size:18px;
+animation:fall linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(360deg);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="section hero">
+
+<div class="hero-card">
+
+<h1>27 Oktober</h1>
+
+<p class="subtitle">
+
+Untuk seseorang yang lahir pada hari yang istimewa.
+
+Seseorang yang mungkin tidak pernah benar-benar menyadari
+betapa berharganya dirinya.
+
+</p>
+
+<button class="btn"
+onclick="document.getElementById('envelope').scrollIntoView()">
+Buka Pesan
+</button>
+
+</div>
+
+</section>
+
+<section id="envelope" class="section">
+
+<h2>Untuk...</h2>
+
+<div class="envelope"
+onclick="openLetter()"></div>
+
+<p style="margin-top:30px">
+Klick into this to open up.
+</p>
+
+</section>
+
+<section id="message" class="section hidden">
+
+<h2>Haura Aulia ARC</h2>
+
+<h2>or i called...</h2>
+
+<h1 style="font-size:4rem;color:#b76e79;">
+Nona Raa Hauu 
+</h1>
+
+<p id="typing" class="typing"></p>
+
+</section>
+
+<section class="section">
+
+<h2>Potret Nonaaa in my gallery yaaa</h2>
+
+<div class="gallery">
+
+haura1.jpg
+haura2.jpg
+haura3.jpg
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="letter">
+
+<h2>Untuk Nona Raa Hauu</h2>
+
+<p>
+
+Hari ini usiamu bertambah menjadi
+21 tahun.
+
+Ada banyak cara untuk merayakan ulang tahun seseorang.
+
+Ada yang memilih hadiah.
+
+Ada yang memilih pesta.
+
+Ada yang memilih sekadar ucapan.
+
+Dan aku memilih membuat tempat kecil ini.
+
+Tempat sederhana yang dibuat khusus
+untukmu.
+
+Terima kasih sudah menjadi seseorang yang berbeda.
+
+Bukan karena selalu sempurna.
+
+Melainkan karena caramu hadir.
+
+Caramu berbicara.
+
+Caramu tertawa.
+
+Dan caramu menjadi dirimu sendiri.
+
+Selalu mempunyai ruang yang istimewa.
+
+Semoga di usia yang baru ini
+langkahmu semakin ringan.
+
+Hatimu semakin tenang.
+
+Rezekimu semakin luas.
+
+Bahagiamu semakin banyak.
+
+Dan semua doa yang diam-diam kamu simpan,
+satu demi satu menemukan jalannya.
+
+Jika suatu hari nanti
+kamu kembali membuka halaman ini,
+
+aku ingin kamu tahu bahwa
+
+di hari ulang tahunmu,
+
+ada seseorang yang benar-benar
+berharap kamu bahagia.
+
+Dengan tulus.
+
+Selamat ulang tahun,
+Nona Raa Hauu.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section final">
+
+<div class="count">21</div>
+
+<h2>Happy Birthday</h2>
+
+<h1 style="font-size:4rem;">
+Nona Raa Hauu ❤️
+</h1>
+
+<p style="max-width:700px;line-height:2">
+
+Tahun yang baru.
+
+Doa yang baru.
+
+Harapan yang baru.
+
+Dan semoga kebahagiaan yang jauh lebih besar.
+
+</p>
+
+<button class="secret" onclick="secret()">
+Jangan Klik Ini 👀
+</button>
+
+<div id="secretMessage"></div>
+
+</section>
+
+<script>
+
+const text=
+`Mungkin ini bukan hadiah paling mahal.
+
+Mungkin juga bukan hadiah paling mewah.
+
+Tapi ada sesuatu yang ingin kusimpan di sini untukmu.
+
+Karena beberapa orang hadir begitu saja.
+
+Dan beberapa lainnya hadir lalu meninggalkan kesan.
+
+Kamu termasuk yang kedua. ❤️`;
+
+function openLetter(){
+
+document.getElementById("message")
+.classList.remove("hidden");
+
+let i=0;
+
+let target=document.getElementById("typing");
+
+let timer=setInterval(()=>{
+
+target.innerHTML += text.charAt(i);
+
+i++;
+
+if(i>=text.length){
+clearInterval(timer);
+}
+
+},35);
+
+document.getElementById("message")
+.scrollIntoView({behavior:"smooth"});
+
+}
+
+function secret(){
+
+document.getElementById("secretMessage")
+.innerHTML=
+
+`🤍
+
+Rahasia kecil.
+
+Dari begitu banyak orang yang pernah kutemui.
+
+Kamu adalah salah satu alasan
+mengapa beberapa hari terasa lebih indah.
+
+Terima kasih sudah menjadi Haura.
+
+Terima kasih sudah menjadi Nona Raa Hauu.
+
+🤍`;
+
+}
+
+for(let i=0;i<40;i++){
+
+const flower=document.createElement("div");
+
+flower.classList.add("sakura");
+
+flower.innerHTML="✿";
+
+flower.style.left=Math.random()*100+"%";
+
+flower.style.animationDuration=
+(Math.random()*8+6)+"s";
+
+flower.style.fontSize=
+(Math.random()*15+10)+"px";
+
+document.body.appendChild(flower);
+
+}
+
+</script>
+
+</body>
+</html>
